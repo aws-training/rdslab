@@ -14,7 +14,7 @@
                 ?>
         </div>
 <?php endif ?>
-<?php $results = $conn->query( "SELECT * FROM info"); ?>
+<?php $results = $conn->query( "SELECT * FROM address"); ?>
 
 <table>
        	<thead>
