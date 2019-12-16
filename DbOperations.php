@@ -1,5 +1,5 @@
 <?php 
-      	/*create table mysqldbinstance.info
+      	/*create table mysqldbinstance.address
         (
         id INT NOT NULL AUTO_INCREMENT,
         name VARCHAR(100),
@@ -23,7 +23,7 @@ $_SESSION['message'] = "<font color='red'>". "Address NOT Saved "."<br>"."Error:
         if (isset($_POST['save'])) {
                 $name = $_POST['name'];
                 $address = $_POST['address'];
-                $sql ="INSERT INTO adress (name, address) VALUES ('$name', '$address')";
+                $sql ="INSERT INTO address (name, address) VALUES ('$name', '$address')";
 if ($conn->query($sql) === TRUE) {
 $_SESSION['message'] = "Address Saved Successfully";
   echo "New records created successfully";
